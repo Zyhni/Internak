@@ -30,10 +30,13 @@ public class UserService {
                 return new DtoResponse(409, existingEmail, "Email Sudah di Gunakan");
             } else {
                 User newData = new User();
-                newData.setUsrEmail(user.getUsrEmail());
-                newData.setUsrPassword(user.getUsrPassword());
-                newData.setUsrNama(user.getUsrNama());
+                newData.setUsrNamaDepan(user.getUsrNamaDepan());
+                newData.setUsrNamaBlkg(user.getUsrNamaBlkg());
+                newData.setKodePos(user.getKodePos());
                 newData.setNoTelp(user.getNoTelp());
+                newData.setUsrEmail(user.getUsrEmail());
+                newData.setUsrNama(user.getUsrNama());
+                newData.setUsrPassword(user.getUsrPassword());
                 newData.setUsrStatus("Aktif");
                 userRepository.save(newData);
                 return new DtoResponse(200,user,"Sukses Membuat Data");
@@ -102,11 +105,11 @@ public class UserService {
     }
 
     public void createEmail(String toEmail,
-                          String subject,
-                          String body){
+                            String subject,
+                            String body){
 
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("sisteminformasiperwalian@gmail.com");
+        message.setFrom("faizzihnia@gmail.com");
         message.setTo(toEmail);
         message.setText(body);
         message.setSubject(subject);
