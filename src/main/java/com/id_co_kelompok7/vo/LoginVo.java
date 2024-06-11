@@ -14,19 +14,31 @@ public class LoginVo {
 
     private Integer usrId;
 
-    private String usrNama;
+    private String usrNamaDepan;
+
+    private String usrNamaBlkg;
+
+    private String kodePos;
 
     private String noTelp;
 
     private String usrEmail;
 
+    private String usrNama;
+
+    private String usrPassword;
+
     private String usrStatus;
 
     public LoginVo(User user){
         this.usrId = user.getUsrId();
-        this.usrNama = user.getUsrNama();
+        this.usrNamaDepan = user.getUsrNamaDepan();
+        this.usrNamaBlkg = user.getUsrNamaBlkg();
+        this.kodePos = user.getKodePos();
         this.noTelp = user.getNoTelp();
         this.usrEmail = user.getUsrEmail();
+        this.usrNama = user.getUsrNama();
+        this.usrPassword = user.getUsrPassword();
         this.usrStatus = user.getUsrStatus();
     }
 }

@@ -37,6 +37,4 @@ public class UserRest {
     public DtoResponse resetPasswordById(@RequestParam("oldpassword") String oldPassword, @RequestParam("newpassword") String newPassword){
         return userService.resetPasswordByTempPassword(oldPassword, newPassword);
     }
-
-
 }
