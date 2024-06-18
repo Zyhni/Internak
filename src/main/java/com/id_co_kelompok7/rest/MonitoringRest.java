@@ -29,6 +29,10 @@ public class MonitoringRest {
 
     @PostMapping("/updateTanggalAkhir")
     public DtoResponse updateTanggalAkhir(@RequestBody Monitoring monitoring){
-        return monitoringService.updateMonitoring(monitoring);
+        return monitoringService.updateMonitoringTanggalAkhir(monitoring);
+    }
+    @PostMapping("/updateSelesai")
+    public DtoResponse updateSelesai(@RequestBody Monitoring monitoring){
+        return monitoringService.updateMonitoringStatus(monitoring);
     }
 }
