@@ -35,8 +35,8 @@ public class MonitoringVo {
         this.tmoKeluhan = monitoring.getTmoKeluhan();
         this.tmoDeskripsi = monitoring.getTmoDeskripsi();
         this.tmoPeriode = monitoring.getTmoPeriode();
-        this.tmoTanggalMulai = monitoring.getTmoTangggalMulai();
-        this.tmoTanggalAkhir = monitoring.getTmoTangggalAkhir();
+        this.tmoTanggalMulai = monitoring.getTmoTanggalMulai();
+        this.tmoTanggalAkhir = monitoring.getTmoTanggalAkhir();
         this.tmoStatus = monitoring.getTmoStatus();
     }
 

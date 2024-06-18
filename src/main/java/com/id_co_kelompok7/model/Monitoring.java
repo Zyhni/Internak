@@ -33,10 +33,10 @@ public class Monitoring {
     private String tmoPeriode;
 
     @Column(name = "tmo_tanggalmulai")
-    private LocalDate tmoTangggalMulai;
+    private LocalDate tmoTanggalMulai;
 
     @Column(name = "tmo_tanggalakhir")
-    private LocalDate tmoTangggalAkhir;
+    private LocalDate tmoTanggalAkhir;
 
     @Column(name = "tmo_status")
     private String tmoStatus;
