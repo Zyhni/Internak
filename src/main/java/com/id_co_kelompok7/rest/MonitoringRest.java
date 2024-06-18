@@ -21,7 +21,10 @@ public class MonitoringRest {
     public DtoResponse getAllMonitoringByStatus(@RequestParam("idHewan") Integer idHewan){
         return monitoringService.getAllMonitoringByStatusAndIdHewan(idHewan);
     }
-
+    @GetMapping("/getAllMonitoring")
+    public DtoResponse getAllMonitoring(){
+        return monitoringService.getAllMonitoring();
+    }
     @PostMapping("/saveMonitoringHewan")
     public DtoResponse saveMonitoring(@RequestBody Monitoring monitoring){
         return monitoringService.saveMonitoring(monitoring);

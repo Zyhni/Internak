@@ -78,6 +78,15 @@ public class MonitoringService {
         }
 
     }
+    public DtoResponse getAllMonitoring(){
+        Iterable<Monitoring> monitorings = monitoringRepository.findAll();
+        List<MonitoringVo> monitoringVos = new ArrayList<>();
+        for (Monitoring item: monitorings){
+            MonitoringVo monitoringVo = new MonitoringVo(item);
+            monitoringVos.add(monitoringVo);
+        }
+        return new DtoResponse(200, monitoringVos, "Data Di temukan");
+    }
 
     public DtoResponse updateMonitoringStatus(Monitoring monitoring) {
         try {
