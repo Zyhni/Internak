@@ -37,9 +37,6 @@ public class Kandang {
     @Column(name = "kdg_alamat")
     private String kdgAlamat;
 
-    @Column(name = "kdg_titik_lokasi")
-    private String kdgTitikLokasi;
-
     @Column(name = "kdg_suhu")
     private Integer kdgSuhu;
 
@@ -48,4 +45,10 @@ public class Kandang {
 
     @Column(name = "kdg_status")
     private String kdgStatus;
+
+    @Column(name = "kdg_lattitude")
+    private double kdgLattitude;
+
+    @Column(name = "kdg_longtitude")
+    private double kdgLongtitude;
 }

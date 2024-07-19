@@ -27,7 +27,9 @@ public class KandangVo {
 
     private String kdgAlamat;
 
-    private String kdgTitikLokasi;
+    private double kdgLattitude;
+    
+    private double kdgLongtitude;
 
     private Integer kdgSuhu;
 
@@ -43,7 +45,8 @@ public class KandangVo {
         this.kdgKapasitas = kandang.getKdgKapasitas();
         this.kdgLuas = kandang.getKdgLuas();
         this.kdgAlamat = kandang.getKdgAlamat();
-        this.kdgTitikLokasi = kandang.getKdgTitikLokasi();
+        this.kdgLattitude = kandang.getKdgLattitude();
+        this.kdgLongtitude = kandang.getKdgLongtitude();
         this.kdgSuhu = kandang.getKdgSuhu();
         this.kdgStatusMonitor = kandang.getKdgStatusMonitor();
         this.kdgStatus = kandang.getKdgStatus();
